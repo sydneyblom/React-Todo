@@ -5,28 +5,14 @@ import TodoList from './components/TodoComponents/TodoList';
 
 
 
-const tasksData = [
-  {
-    task: 'Organize Garage',
-    id: 1528817077286,
-    completed: false
-  },
-  {
-    task: 'Bake Cookies',
-    id: 1528817084358,
-    completed: false
-  }
-];
-
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      tasks: tasksData,
+      tasks: [],
 
     };
 
-    // this.toggleItem = this.toggleItem.bind(this);
   }
 
   toggleItem = id => {
